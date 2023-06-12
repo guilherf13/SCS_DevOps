@@ -1,0 +1,60 @@
+version: "3.7"
+
+services:
+  # image projectapp:
+  app:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: frontend
+    ports:
+      - '5173:5173'
+    volumes:
+    - ./frontend:/app
+    networks:
+      - laravel
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    working_dir: /var/www/
+    volumes:
+      - ./backend:/var/www:rw
+    container_name: backend
+    networks:
+      - laravel
+
+  # nginx
+  nginx:
+    image: nginx:alpine
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    volumes:
+      - ./backend:/var/www
+      - ./docker/nginx:/etc/nginx/conf.d/
+    container_name: nginx
+    networks:
+      - laravel
+
+  # db postgres
+  db:
+    image: postgres
+    restart: always  
+    environment:  
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: scs 
+    volumes:  
+      - ./docker/dbdata:/var/lib/postgresql/data
+    container_name: db-postgres
+    ports:
+      - "5432:5432"
+    networks:
+      - laravel
+
+networks:
+  laravel:
+    driver: bridge
