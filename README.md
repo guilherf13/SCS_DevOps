@@ -44,35 +44,30 @@
 
 <br>
 
-## :dart: About ##
+## :dart: Sobre o Projeto ##
 
-Describe your project
+Ambiente de desenvolvimento da SCS na Facimp Wyden
 
-## :sparkles: Features ##
+## :rocket: Tecnologias ultilizadas ##
 
-:heavy_check_mark: Feature 1;\
-:heavy_check_mark: Feature 2;\
-:heavy_check_mark: Feature 3;
+Ferramentas ultilizadas no projeto:
 
-## :rocket: Technologies ##
-
-The following tools were used in this project:
-
-- [Expo](https://expo.io/)
-- [Node.js](https://nodejs.org/en/)
-- [React](https://pt-br.reactjs.org/)
-- [React Native](https://reactnative.dev/)
+- [Vite](https://pt-br.reactjs.org/)
+- [Reactjs](https://pt-br.reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
+- [Laravel](https://www.typescriptlang.org/)
+- [Postgres](https://www.typescriptlang.org/)
+- [Docker](https://www.typescriptlang.org/)
 
 ## :white_check_mark: Requirements ##
 
-Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed.
+Para rodar o projeto, você vai precisar do docker [Docker](https://www.docker.com/).
 
-## :checkered_flag: Starting ##
+## :checkered_flag: Subindo o ambiente de desenvolvimento ##
 
 ```bash
 # Clone o projeto
-$ git clone https://github.com/{{YOUR_GITHUB_USERNAME}}/ambiente_de_desenvolvimentos_scs
+$ git clone https://github.com/guilherf13/SCS_DevOps
 
 # Executando o ambiente
 $ sudo chmod -R 777 ambiente_de_desenvolvimentos_scs
@@ -95,7 +90,7 @@ $ docker exec -it backend php artisan key:generate
 This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
 
 
-Made with :heart: by <a href="https://github.com/{{YOUR_GITHUB_USERNAME}}" target="_blank">{{YOUR_NAME}}</a>
+Made with :heart: by <a href="https://github.com/{{guilherf13}}" target="_blank">{{guilherme}}</a>
 
 &#xa0;
 
