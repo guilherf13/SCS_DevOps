@@ -90,7 +90,7 @@ $ docker exec -it backend php artisan key:generate
 This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
 
 
-Made with :heart: by <a href="https://github.com/{{guilherf13}}" target="_blank">{{guilherme}}</a>
+Made with :heart: by <a href="https://github.com/guilherf13" target="_blank">{{guilherme}}</a>
 
 &#xa0;
 
