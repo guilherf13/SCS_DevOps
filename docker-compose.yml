@@ -48,7 +48,7 @@ services:
       POSTGRES_PASSWORD: postgres
       POSTGRES_DB: scs 
     volumes:  
-      - ./docker/dbdata:/var/lib/postgresql/data
+      - ./docker/data:/var/lib/postgresql/data
     container_name: db-postgres
     ports:
       - "5432:5432"

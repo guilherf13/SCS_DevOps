@@ -6,7 +6,7 @@
   <!-- <a href="https://ambiente_de_desenvolvimentos_scs.netlify.app">Demo</a> -->
 </div>
 
-<h1 align="center">Ambiente_de_desenvolvimentos_scs</h1>
+<h1 align="center">Ambiente de desenvolvimentos SCS Facimp</h1>
 
 <p align="center">
   <img alt="Github top language" src="https://img.shields.io/github/languages/top/{{YOUR_GITHUB_USERNAME}}/ambiente_de_desenvolvimentos_scs?color=56BEB8">
@@ -70,8 +70,8 @@ Para rodar o projeto, você vai precisar do docker [Docker](https://www.docker.c
 $ git clone https://github.com/guilherf13/SCS_DevOps
 
 # Executando o ambiente
-$ sudo chmod -R 777 ambiente_de_desenvolvimentos_scs
-$ cd ambiente_de_desenvolvimentos_scs
+$ sudo chmod -R 777 SCS_DevOps
+$ cd SCS_DevOps
 $ cd backend
 $ cp .env.example .env
 $ docker compose up -d --build
