@@ -70,10 +70,14 @@ Para rodar o projeto, você vai precisar do docker [Docker](https://www.docker.c
 $ git clone https://github.com/guilherf13/SCS_DevOps
 
 # Executando o ambiente
-$ sudo chmod -R 777 SCS_DevOps
+
 $ cd SCS_DevOps
 $ cd backend
 $ cp .env.example .env
+$ cd ..
+$ cd ..
+$ sudo chmod -R 777 SCS_DevOps
+$ cd SCS_DevgOps
 $ docker compose up -d --build
 $ docker exec -it backend composer install
 $ docker exec -it backend php artisan key:generate
